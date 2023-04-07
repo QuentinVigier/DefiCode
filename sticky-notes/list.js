@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 
         const task = input.value;
     
-    //Envoie une alert si la tach est vide. EMpêche lm'utilisateur de rentrer des tachs vides
+    //Envoie une alerte si la tache est vide. Empêche lm'utilisateur de rentrer des taches vides
         if (!task) {
             alert("Veuillez remplir une tâche avant de valider");
             return;
@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
         task_delete_el.classList.add("delete");
         task_delete_el.innerHTML = "Supprimer";
 
-        //Fait dezs deux boutons créés au dessus des enfants de la div avec la class actions(toujours en train de reproduire l'exemple html)
+        //Fait des deux boutons créés au dessus des enfants de la div avec la class actions(toujours en train de reproduire l'exemple html)
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);
         task_el.appendChild(task_actions_el);
@@ -63,7 +63,7 @@ window.addEventListener('load', () => {
 
         input.value = "";
 
-        //L'ordre des balises ets bon mais les boutons ne marchent pas on va donnc le faire ici
+        //L'ordre des balises est bon mais les boutons ne marchent pas on va donc le faire ici
         //On pose un écouteur qui attends un click sur le boutton edit et qui va transformer le boutton et offrir la possibilité de modifier le contenu de l'input
         task_edit_el.addEventListener('click', () => {
             if(task_edit_el.innerText.toLowerCase() == "modifier") {
